@@ -1,0 +1,16 @@
+
+.card {
+  border-radius: 12px;
+}
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #efefef;
+}
+
+.list-group-item {
+  padding: 1rem 1.25rem;
+}
+
+.fw-medium {
+  font-weight: 600;
+}

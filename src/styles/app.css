@@ -14,3 +14,27 @@
 .fw-medium {
   font-weight: 600;
 }
+
+
+body {
+  background-color: #f0f6ff; /* soft light blue */
+}
+
+/* Default link style */
+.nav-link {
+  color: black !important;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Highlighted when active */
+.active-link {
+  background-color: rgb(195, 225, 255);   /* White box */
+  color: black !important;     /* ✅ Always black */
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+

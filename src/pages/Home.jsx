@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import InputField from "../components/InputField";
 
 function Home() {
@@ -36,9 +37,27 @@ function Home() {
 
   return (
     <div>
-      <h4>Home</h4>
-      <div className="border rounded p-4 mt-3">
-        <h5 className="mb-4">Model Input Configuration</h5>
+      <div className="container-fluid">
+        <div className="row align-items-center mb-3">
+          {/* Left side: Heading */}
+          <div className="col">
+            <h1 className="mb-0">Home</h1>
+          </div>
+
+          <div className="col">
+            <button className="btn btn-primary rounded-pill px-4">Model Input</button>
+          </div>
+
+          {/* Right side: Buttons */}
+          <div className="col-auto d-flex gap-2">
+
+            <button className="btn btn-primary"><i className="bi bi-save me-2"></i>Save</button>
+            <button className="btn btn-secondary"><i className="bi bi-arrow-counterclockwise me-2"></i>Reset</button>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+
 
         <div className="row">
           <div className="col-md-6">
@@ -120,9 +139,11 @@ function Home() {
 
         <div className="d-flex justify-content-end mt-4">
           <button className="btn btn-outline-secondary me-2" onClick={handleClear}>
-            Clear
+            <i className="bi bi-eraser me-2"></i>Clear
           </button>
-          <button className="btn btn-primary">Run Prediction</button>
+          <Link to="/results" className="btn btn-primary">
+            <i className="bi bi-graph-up me-2"></i>Run Prediction
+          </Link>
         </div>
       </div>
     </div>

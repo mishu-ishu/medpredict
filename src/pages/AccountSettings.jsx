@@ -13,28 +13,29 @@ function AccountSettings() {
 
   return (
     <div>
-      
-      <div className="d-flex justify-content-between align-items-center mb-3">
-        <h4 className="mb-0">Account Settings</h4>
-        <div>
-          <button className="btn btn-primary me-2">Save Changes</button>
-          <button className="btn btn-outline-secondary">Cancel</button>
+
+      <div className="container-fluid">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          {/* Left side: Heading */}
+          <h1 className="mb-0">Account Settings</h1>
+
+          {/* Middle: Section buttons */}
+          <div className="d-flex gap-2 flex-grow-1 justify-content-center">
+            <button className="btn btn-primary rounded-pill px-4">General</button>
+            <button className="btn btn-secondary rounded-pill px-4">
+              Notifications
+            </button>
+          </div>
+
+          {/* Right side: Action buttons */}
+          <div className="d-flex gap-2">
+            <button className="btn btn-primary me-2"><i className="bi bi-save me-2"></i>Save Changes</button>
+            <button className="btn btn-secondary"><i className="bi bi-arrow-counterclockwise me-2"></i>Cancel</button>
+          </div>
         </div>
       </div>
 
-      
-      <ul className="nav nav-pills mb-4">
-        <li className="nav-item">
-          <button className="nav-link active">General</button>
-        </li>
-        <li className="nav-item">
-          <button className="nav-link disabled" disabled>
-            Notifications
-          </button>
-        </li>
-      </ul>
 
-     
       <div className="row g-3">
         <div className="col-lg-6">
           <div className="card shadow-sm h-100">
@@ -104,7 +105,7 @@ function AccountSettings() {
         </div>
       </div>
 
-     
+
       <div className="card shadow-sm mt-3">
         <div className="card-header bg-white">
           <strong>Notifications</strong>
@@ -176,7 +177,7 @@ function AccountSettings() {
         </div>
       </div>
 
-   
+
       <div className="card shadow-sm mt-3 border border-danger">
         <div className="card-header bg-white text-danger">
           <strong>Danger Zone</strong>
@@ -187,7 +188,7 @@ function AccountSettings() {
               <div className="fw-medium">Deactivate Account</div>
               <small className="text-muted">Temporarily suspend access.</small>
             </div>
-            <button className="btn btn-outline-warning">Deactivate</button>
+            <button className="btn btn-outline-warning"><i className="bi bi-person-x me-2"></i>Deactivate</button>
           </div>
 
           <div className="d-flex justify-content-between align-items-center pt-3">
@@ -195,7 +196,7 @@ function AccountSettings() {
               <div className="fw-medium">Delete Account</div>
               <small className="text-muted">Permanently remove all data.</small>
             </div>
-            <button className="btn btn-danger">Delete</button>
+            <button className="btn btn-danger"><i className="bi bi-trash me-2"></i>Delete</button>
           </div>
         </div>
       </div>

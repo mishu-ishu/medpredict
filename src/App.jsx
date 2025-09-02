@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
 import Home from './pages/Home';
 import AccountSettings from './pages/AccountSettings';
+import PredictionResultsPage from './pages/PredictionResults';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/settings" element={<AccountSettings />} />
+              <Route path="/results" element={<PredictionResultsPage />} />
             </Routes>
           </div>
         </div>
